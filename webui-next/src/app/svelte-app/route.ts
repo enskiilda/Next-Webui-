@@ -23,7 +23,7 @@ export async function GET() {
   } catch (error) {
     console.error("Failed to serve Svelte app:", error);
     return new NextResponse("Unable to load Svelte application", {
-      status: 404,
+      status: 500,
       headers: {
         "content-type": "text/plain; charset=utf-8",
         "x-content-type-options": "nosniff",

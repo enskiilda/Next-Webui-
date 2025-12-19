@@ -1,6 +1,5 @@
 const SVELTE_APP_PATH =
-  "/" +
-  (process.env.NEXT_PUBLIC_SVELTE_APP_PATH ?? "svelte-app/").replace(/^\/+/, "");
+  process.env.NEXT_PUBLIC_SVELTE_APP_PATH || "/svelte-app/";
 
 export default function Home() {
   return (
