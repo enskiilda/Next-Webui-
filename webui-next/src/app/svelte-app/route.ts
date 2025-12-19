@@ -9,11 +9,21 @@ export async function GET() {
     "svelte-app",
     "index.html",
   );
-  const html = await fs.readFile(filePath, "utf8");
 
-  return new NextResponse(html, {
-    headers: {
-      "content-type": "text/html; charset=utf-8",
-    },
-  });
+  try {
+    const html = await fs.readFile(filePath, "utf8");
+
+    return new NextResponse(html, {
+      headers: {
+        "content-type": "text/html; charset=utf-8",
+      },
+    });
+  } catch {
+    return new NextResponse("Not Found", {
+      status: 404,
+      headers: {
+        "content-type": "text/plain; charset=utf-8",
+      },
+    });
+  }
 }
