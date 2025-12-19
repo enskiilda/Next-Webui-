@@ -18,7 +18,8 @@ export async function GET() {
         "content-type": "text/html; charset=utf-8",
       },
     });
-  } catch {
+  } catch (error) {
+    console.error("Failed to serve Svelte app:", error);
     return new NextResponse("Svelte app not found", {
       status: 404,
       headers: {
