@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Open WebUI",
-  description: "Interfejs zachowany 1:1",
+  description: "UI preserved 1:1",
 };
 
 export default function RootLayout({

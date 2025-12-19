@@ -19,7 +19,7 @@ export async function GET() {
       },
     });
   } catch {
-    return new NextResponse("Not Found", {
+    return new NextResponse("Svelte app not found", {
       status: 404,
       headers: {
         "content-type": "text/plain; charset=utf-8",
