@@ -16,6 +16,8 @@ export async function GET() {
     return new NextResponse(html, {
       headers: {
         "content-type": "text/html; charset=utf-8",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
       },
     });
   } catch (error) {
@@ -24,6 +26,8 @@ export async function GET() {
       status: 404,
       headers: {
         "content-type": "text/plain; charset=utf-8",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
       },
     });
   }
