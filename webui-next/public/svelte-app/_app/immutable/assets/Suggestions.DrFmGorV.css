@@ -1,0 +1,106 @@
+
+        .ant-dropdown-menu {
+                margin: 0;
+                padding: 4px 0;
+                list-style: none;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+                            0 3px 6px -4px rgba(0, 0, 0, 0.12),
+                            0 9px 28px 8px rgba(0, 0, 0, 0.05);
+                z-index: 1050;
+        }
+
+        .ant-dropdown-menu-item {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 5px 12px;
+                color: rgba(0, 0, 0, 0.88);
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                cursor: pointer;
+                transition: background 0.2s ease;
+        }
+
+        .ant-dropdown-menu-item:hover {
+                background-color: rgba(0, 0, 0, 0.04);
+        }
+
+        .ant-dropdown-menu-item a {
+                color: rgba(0, 0, 0, 0.88);
+                text-decoration: none;
+                display: block;
+                width: 100%;
+        }
+
+        .ant-dropdown-menu-item a:hover {
+                color: rgba(0, 0, 0, 0.88);
+        }
+
+        .ant-dropdown-menu-divider {
+                height: 1px;
+                margin: 4px 0;
+                background-color: rgba(5, 5, 5, 0.06);
+                border: none;
+        }
+
+        @keyframes svelte-pwh38d-breathe {
+                0%, 100% {
+                        transform: scale(0.6);
+                        opacity: 0.7;
+                }
+                50% {
+                        transform: scale(1);
+                        opacity: 1;
+                }
+        }
+
+        .animate-breathe.svelte-pwh38d {
+                animation: svelte-pwh38d-breathe 1.2s ease-in-out infinite;
+        }
+
+        .modal-content.svelte-1vr5p4p {
+                animation: svelte-1vr5p4p-scaleUp 0.1s ease-out forwards;
+        }
+
+        @keyframes svelte-1vr5p4p-scaleUp {
+                from {
+                        transform: scale(0.985);
+                        opacity: 0;
+                }
+                to {
+                        transform: scale(1);
+                        opacity: 1;
+                }
+        }
+
+        .buttons.svelte-1qscqw6::-webkit-scrollbar {
+                display: none; /* for Chrome, Safari and Opera */
+        }
+
+        .buttons.svelte-1qscqw6 {
+                -ms-overflow-style: none; /* IE and Edge */
+                scrollbar-width: none; /* Firefox */
+        }
+
+        /* Waterfall animation for the suggestions */
+        @keyframes svelte-6tnq1o-fadeInUp {
+                0% {
+                        opacity: 0;
+                        transform: translateY(20px);
+                }
+                100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                }
+        }
+
+        .waterfall.svelte-6tnq1o {
+                opacity: 0;
+                animation-name: svelte-6tnq1o-fadeInUp;
+                animation-duration: 200ms;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease;
+        }
