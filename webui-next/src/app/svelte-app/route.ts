@@ -3,7 +3,7 @@ import path from "path";
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  const filePath = path.join(
+  const filePath = path.resolve(
     process.cwd(),
     "public",
     "svelte-app",
@@ -22,7 +22,7 @@ export async function GET() {
     });
   } catch (error) {
     console.error("Failed to serve Svelte app:", error);
-    return new NextResponse("Svelte app not found", {
+    return new NextResponse("Unable to load Svelte application", {
       status: 404,
       headers: {
         "content-type": "text/plain; charset=utf-8",
